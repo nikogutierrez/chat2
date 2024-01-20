@@ -1,0 +1,128 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+	border: none;
+	outline: none;
+}
+
+body { 
+   	font: 20px 'Segoe UI', sans-serif;
+	font-weight: 400;
+   	background-color: rgb(35, 40, 65);
+}
+
+form {
+    padding: 20px; 
+    position: fixed; 
+    bottom: 0;
+    width: 100%;
+}
+
+form input {
+	background-color: rgb(54, 61, 95);
+    color: rgb(223, 217, 221);
+	border-radius: 8px;
+    padding: 10px; 
+    width: 100%; 
+    margin-right: 0.5%; 
+   	font: 20px 'Segoe UI', sans-serif;
+	font-weight: 400;
+    transition: width .5s;
+}
+
+#messages { 
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0; 
+    margin-bottom: 70px;
+    color: ghostwhite;
+}
+
+#messages li { 
+    padding: 5px 30px; 
+    word-wrap: break-word;
+}
+
+.system-notification{
+    text-align: center;
+	font-weight: 600;
+}
+
+.ping{
+    background: rgba(47, 205, 216, 0.2);
+}
+
+::-webkit-Scrollbar{
+    width: 8px; 
+	background: inherit;
+}
+::-webkit-Scrollbar-thumb{
+	border-radius: 8px;
+	background-color: rgb(19, 21, 31);
+}
+::-webkit-Scrollbar-track{
+	border-radius: 10px;
+}
+
+.sidenav {
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    right: 0;
+    background-color: rgb(26, 30, 48);
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; 
+}
+
+.sidenav p {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav p:hover {
+    color: #f1f1f1;
+}
+
+.closebtn{
+    cursor: pointer;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-right .5s;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+#users-button{
+    position: fixed;
+    top: 25px;
+    right: 40px;
+    color: #818181;
+    font-size: 75%;
+    transition: 0.3s;
+    --ggs: 1.75;
+}
+
+#users-button:hover{
+    cursor: pointer;
+    color: #f1f1f1;
+}

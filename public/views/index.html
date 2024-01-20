@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Chat app</title>
+        <meta charset="UTF-8"></meta>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../styles/style.css" id="style">
+        <link rel="shortcut icon" href="https://th.bing.com/th/id/OIP.nhzM6dHeM1jnOKJtDiH6KQHaGr?w=195&h=180&c=7&o=5&pid=1.7">
+        <link href='https://css.gg/css' rel='stylesheet'>
+    </head>
+
+    <body>
+
+        <div id="mySidenav" class="sidenav">
+            <p id="user-close-button" class="closebtn" onclick="closeNav()">&times;</p>
+        </div>
+
+        <span onclick="openNav()" id="users-button"><i class="gg-user"></i></span>
+
+        <div id="main">
+            <ul id="messages"></ul>
+
+            <form id="input" action="">
+                <input id="m" autocomplete="off" placeholder="Enter message"> 
+            </form>
+
+            <script src="/socket.io/socket.io.js"></script>
+            <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+            <script src="../scripts/script.js"></script>
+        </div>
+
+    </body>
+</html>
